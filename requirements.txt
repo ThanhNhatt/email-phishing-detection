@@ -1,7 +1,3 @@
 transformers==4.41.2
-torch>=2.0.0
+torch==2.2.1
 pandas
-datasets
-huggingface_hub
-scikit-learn
-tokenizers==0.13.3
