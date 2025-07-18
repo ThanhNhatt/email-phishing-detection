@@ -13,8 +13,8 @@ import pandas as pd
 EMAIL_USER = "decalseri@gmail.com"
 EMAIL_PASS = "mwma nfep tybx dbwl"  # App Password Gmail
 IMAP_SERVER = "imap.gmail.com"
-MODEL_DIR = r"C:\Users\Thanh Nhat\saved_model_updated"  # Model đã fine-tune
-CHECK_INTERVAL = 30  # Kiểm tra mỗi 30 giây
+MODEL_DIR = os.getenv("MODEL_DIR", "/app/saved_model_updated")  # Đường dẫn trong container
+CHECK_INTERVAL = int(os.getenv("CHECK_INTERVAL", 30))  # Mặc định 30s
 LOG_FILE = "email_scan_log.csv"
 
 # Thiết bị
