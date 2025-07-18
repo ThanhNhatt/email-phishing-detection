@@ -4,3 +4,4 @@ pandas
 datasets
 huggingface_hub
 scikit-learn
+tokenizers==0.13.3
